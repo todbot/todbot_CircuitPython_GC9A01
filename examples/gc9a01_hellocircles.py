@@ -62,7 +62,7 @@ elif 'Pico' in board_type:
     tft_cs  = board.GP14
     tft_bl  = board.GP15
     spi = busio.SPI(clock=tft_clk, MOSI=tft_mosi)
-elif 'Waveshare RP2040-LCD-1.28 with rp2040' in board_type:
+elif 'Waveshare RP2040-LCD-1.28 with rp2040' or 'Waveshare RP2040-TOUCH-LCD-1.28 with rp2040' in board_type:
     tft_clk = board.LCD_CLK
     tft_mosi = board.LCD_DIN
     tft_rst = board.LCD_RST
